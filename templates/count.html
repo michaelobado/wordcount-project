@@ -1,0 +1,15 @@
+<a href = "{% url 'about' %}">About</a>
+
+<h1>There are {{ count }} words in your text</h1>
+
+{{ fulltext }}
+
+<h1>Dictionary List</h1>
+
+{% for word, counttotal in sortedlist %}
+
+{{ word }} - {{ counttotal }}
+
+<br/>
+
+{% endfor %} 
